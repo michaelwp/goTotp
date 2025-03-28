@@ -14,12 +14,12 @@ It supports multiple hash algorithms, including HMAC-SHA1, HMAC-SHA256, and HMAC
 To install the package, run:
 
 ```sh
-go get github.com/michaelwp/go_totp
+go get github.com/michaelwp/goTotp
 ```
 
 ## Usage
 
-Here's a step-by-step guide on how to use the `go_totp` library to generate a TOTP.
+Here's a step-by-step guide on how to use the `goTotp` library to generate a TOTP.
 
 ### Import the Package
 
