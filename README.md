@@ -1,6 +1,7 @@
-# go_totp
+# goTotp
 
-`go_totp` is a Go package for generating Time-based One-Time Passwords (TOTP) conforming to RFC 6238. It supports multiple hash algorithms, including HMAC-SHA1, HMAC-SHA256, and HMAC-SHA512.
+`goTotp` is a Go package for generating Time-based One-Time Passwords (TOTP) conforming to RFC 6238.
+It supports multiple hash algorithms, including HMAC-SHA1, HMAC-SHA256, and HMAC-SHA512.
 
 ## Features
 
@@ -25,7 +26,7 @@ Here's a step-by-step guide on how to use the `go_totp` library to generate a TO
 First, import the package into your Go code:
 
 ```go
-import "github.com/michaelwp/go-totp"
+import "github.com/michaelwp/goTotp"
 ```
 
 ### Create a TOTP Instance
@@ -65,7 +66,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/michaelwp/go-totp"
+	"github.com/michaelwp/goTotp"
 	"log"
 	"time"
 )
@@ -75,11 +76,11 @@ func main() {
 	timestamp := time.Now().Unix()
 
 	// define the variables
-	totp := go_totp.Totp{
+	totp := gototp.Totp{
 		Secret:    "rahasia",
 		Digits:    8,
 		Period:    15,
-		Algorithm: go_totp.SHA256,
+		Algorithm: gototp.SHA256,
 		T0:        0,
 	}
 

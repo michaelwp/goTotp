@@ -1,3 +1,3 @@
-module github.com/michaelwp/go-totp
+module github.com/michaelwp/goTotp
 
-go 1.22.5
+go 1.24

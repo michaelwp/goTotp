@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/michaelwp/go-totp"
+	"github.com/michaelwp/goTotp"
 	"log"
 	"time"
 )
@@ -12,11 +12,11 @@ func main() {
 	timestamp := time.Now().Unix()
 
 	// define the variables
-	totp := go_totp.Totp{
+	totp := gototp.Totp{
 		Secret:    "rahasia",
 		Digits:    8,
 		Period:    15,
-		Algorithm: go_totp.SHA256,
+		Algorithm: gototp.SHA256,
 		T0:        0,
 	}
 
